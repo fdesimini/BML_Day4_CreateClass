@@ -41,7 +41,6 @@ static NSString* _defaultModelBike;
     return self;
 }
 
-
 - (id)init {
     // Forward to the "designated" initialization method
     return [self initWithBikeModel:_defaultModelBike];
@@ -51,9 +50,11 @@ static NSString* _defaultModelBike;
 
 +(void)initialize
 {
-    if (self == _defaultModelBike) {
-        _defaultModelBike = @"BMW F800GS Adventure";
+    if (self == [Motorcycle class]) {
+        _defaultModelBike = @"Harley Davidson SuperLow";
     }
 }
+
+
 
 @end

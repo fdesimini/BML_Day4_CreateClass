@@ -39,9 +39,18 @@ int main(int argc, const char * argv[]) {
         
         [bmw ride];
         
-        [Motorcycle setDefaultModel:@"BMW f800s"];
+        //[Motorcycle setDefaultModel:@"BMW f800s"];
     }
     
+    {
+        // Instantiating objects
+        Motorcycle *harleyDavidson = [[Motorcycle alloc] init];
+        NSLog(@"Created a %@", [harleyDavidson modelBike]);
+        
+        Motorcycle *suzuki = [[Motorcycle alloc] initWithBikeModel:@"GSX-R1000"];
+        NSLog(@"Created a %@, too.", suzuki.modelBike);
+    }
+
     
     return 0;
 }
