@@ -39,7 +39,7 @@ int main(int argc, const char * argv[]) {
         
         [bmw ride];
         
-        
+        [Motorcycle setDefaultModel:@"BMW f800s"];
     }
     
     

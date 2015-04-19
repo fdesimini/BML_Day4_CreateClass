@@ -14,5 +14,9 @@
 
 - (void) ride;
 
++ (void)setDefaultModel:(NSString *)aBikeModel;
+
+
+
 
 @end

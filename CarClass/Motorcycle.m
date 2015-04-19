@@ -12,14 +12,23 @@
 
 //Private instance variables
 double _odometer;
+static NSString* _defaultModelBike;
 
 //@synthesize model = _model;
 
 
-//implement functions
+//implement instance method
 - (void) ride;
 {
     NSLog(@"Riding a %@...Rubber side down!", self.modelBike);
 }
+
+
+//Implement a class method
++ (void)setDefaultModel:(NSString *)aBikeModel{
+    _defaultModelBike = [aBikeModel copy];
+}
+
+
 
 @end
