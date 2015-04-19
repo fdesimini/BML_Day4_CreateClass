@@ -10,9 +10,9 @@
 
 @interface Motorcycle : NSObject
 
-@property (copy) NSString *model;
+@property (copy) NSString *modelBike;
 
-- (void) drive;
+- (void) ride;
 
 
 @end

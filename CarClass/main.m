@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "Car.h"
+#import "Motorcycle.h"
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        
+    @autoreleasepool
+    
+    {
         Car *toyota = [[Car alloc] init];
         
         [toyota setModel:@"Toyota Corolla"];
@@ -25,5 +27,21 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"Hello, World!");
     }
+    
+    {
+        Motorcycle *bmw = [[Motorcycle alloc]init];
+        
+        [bmw setModelBike:@"BMW F650GS"];
+         NSLog(@"I just created a %@", [bmw modelBike]);
+        
+        bmw.modelBike = @"BMW k1200";
+        NSLog(@"I just changed the 'bmw' instance to %@", [bmw modelBike]);
+        
+        [bmw ride];
+        
+        
+    }
+    
+    
     return 0;
 }
