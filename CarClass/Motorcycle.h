@@ -14,9 +14,12 @@
 
 - (void) ride;
 
+
+//Class method
 + (void)setDefaultModel:(NSString *)aBikeModel;
 
-
+//constructor method
+-   (id)initWithBikeModel:(NSString *)aBikeModel;
 
 
 @end

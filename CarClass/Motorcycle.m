@@ -29,6 +29,21 @@ static NSString* _defaultModelBike;
     _defaultModelBike = [aBikeModel copy];
 }
 
+//constructor method
+-   (id)initWithBikeModel:(NSString *)aBikeModel;
+{
+    self = [super init];
+    // Any custom setup work goes here
+    if (self) {
+        _modelBike =[aBikeModel copy];
+        _odometer = 0;
+    }
+    return self;
+}
 
 
+- (id)init {
+    // Forward to the "designated" initialization method
+    return [self initWithBikeModel:_defaultModelBike];
+}
 @end
